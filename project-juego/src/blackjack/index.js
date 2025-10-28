@@ -1,5 +1,6 @@
 import _ from 'underscore';
-import './style.css';
+import { crearDeck } from './useCase/deck-function';
+
 /**
  * 2C = Two of Clubs
  * 2D = Two of Diamonds
@@ -45,7 +46,7 @@ const crearDeck = () => {
     return deck;
 }
 */
-crearDeck();
+deck = crearDeck(tipos, especiales);
 
 
 // Esta función me permite tomar una carta
